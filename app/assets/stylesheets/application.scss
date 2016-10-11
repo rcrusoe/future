@@ -21,7 +21,6 @@
 html, body {
   font-size: 10px;
   font-family: 'Josefin Slab', serif;
-  background-color: #222831;
 }
 
 canvas {
@@ -32,6 +31,8 @@ canvas {
   right: 0;
   left: 0;
   bottom: 0; 
+  z-index: -1;
+  background-color: #222831;
 }
 
 h1, textarea{
@@ -49,6 +50,7 @@ textarea{
 	&:focus{
 		outline: none !important;
 	}
+	resize: none;
 }
 
 .prediction{
