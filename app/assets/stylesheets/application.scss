@@ -54,12 +54,30 @@ textarea{
 }
 
 .prediction{
-	margin: 100px 50px;
+	margin: 100px 50px 0 50px;
 }
 
 .instructions{
 	font-family: 'Josefin Slab', serif;
 	text-align: center;
-	font-size: 1.6em;
+	font-size: 2em;
 	margin-top: 60px;
+}
+
+.mobile-only{
+	display: none;
+}
+
+.desktop-only{
+	display: block;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+	.mobile-only{
+		display: block;
+	}
+
+	.desktop-only{
+		display: none;
+	}
 }

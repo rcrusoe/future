@@ -6,10 +6,10 @@
 	    <%= f.hidden_field :topic, id: "topic" %>
 	  </div>
 	  <div class="field">
-	    <%= f.text_area :description, autofocus: "true", rows: "3", id: "description"%>
+	    <%= f.text_area :description, autofocus: "true", rows: "3", id: "description", type: "submit"%>
 	  </div>
 	<% end %>
-	<p class="instructions">
+	<p class="instructions desktop-only">
 		press [⌘ command] + [enter] to submit
 	</p>
 </div>
