@@ -55,10 +55,19 @@ textarea{
 
 .prediction{
 	margin: 100px 50px 0 50px;
-}
-
-.actions{
-	margin-left: -1000px;
+	.actions{
+		text-align: center;
+		border-bottom: 1px solid #f4f5f9;
+		padding: 1em 0;
+		width: 100%;
+		margin-top: 100px;
+		#submit-button{
+			text-align: center;
+			font-family: 'Josefin Slab', serif !important;
+			font-size: 5em !important;
+			color: white;
+		}
+	}
 }
 
 .instructions{

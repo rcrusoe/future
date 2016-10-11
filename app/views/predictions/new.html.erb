@@ -8,8 +8,8 @@
 	  <div class="field">
 	    <%= f.text_area :description, autofocus: "true", rows: "3", id: "description"%>
 	  </div>
-	  <div class="actions">
-	    <%= f.submit %>
+	  <div class="actions mobile-only">
+	    <%= f.submit "Submit Prediction", id: "submit-button" %>
 	  </div>
 	<% end %>
 	<p class="instructions desktop-only">
