@@ -6,7 +6,10 @@
 	    <%= f.hidden_field :topic, id: "topic" %>
 	  </div>
 	  <div class="field">
-	    <%= f.text_area :description, autofocus: "true", rows: "3", id: "description", type: "submit"%>
+	    <%= f.text_area :description, autofocus: "true", rows: "3", id: "description"%>
+	  </div>
+	  <div class="actions">
+	    <%= f.submit %>
 	  </div>
 	<% end %>
 	<p class="instructions desktop-only">
