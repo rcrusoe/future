@@ -20,7 +20,7 @@
 
 html, body {
   font-size: 10px;
-  font-family: 'Josefin Slab', serif;
+  color: #f4f5f9;
 }
 
 canvas {
@@ -55,4 +55,11 @@ textarea{
 
 .prediction{
 	margin: 100px 50px;
+}
+
+.instructions{
+	font-family: 'Josefin Slab', serif;
+	text-align: center;
+	font-size: 1.6em;
+	margin-top: 60px;
 }

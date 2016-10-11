@@ -15,6 +15,7 @@ class PredictionsController < ApplicationController
   # GET /predictions/new
   def new
     @prediction = Prediction.new
+    @topics = ["food", "cities", "college", "offices"]
   end
 
   # GET /predictions/1/edit

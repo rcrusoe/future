@@ -2,15 +2,23 @@
 
 <div class="prediction">
   <%= form_for(@prediction) do |f| %>
+      <div class="field">
+	    <%= f.hidden_field :topic, id: "topic" %>
+	  </div>
 	  <div class="field">
-	    <%= f.text_area :description, autofocus: "true", rows: "3", id: "prediction"%>
+	    <%= f.text_area :description, autofocus: "true", rows: "3", id: "description"%>
 	  </div>
 	<% end %>
+	<p class="instructions">
+		press [⌘ command] + [enter] to submit
+	</p>
 </div>
 
 <script>
-	$("#prediction").focus().val("In the future, food will ");
-	$(document).on('keydown', '#prediction', function(e) {
+	var topic = "<%= @topics.sample %>";
+	$("#topic").val(topic);
+	$("#description").focus().val("In the future, " + topic + " will ");
+	$(document).on('keydown', '#description', function(e) {
 	  if(e.keyCode == 13 && (e.metaKey || e.ctrlKey)) {
 	    $(this).parents('form').submit()
 	  }
