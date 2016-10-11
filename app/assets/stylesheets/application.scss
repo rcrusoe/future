@@ -13,3 +13,44 @@
  *= require_tree .
  *= require_self
  */
+
+* {
+  box-sizing: border-box; 
+}
+
+html, body {
+  font-size: 10px;
+  font-family: 'Josefin Slab', serif;
+  background-color: #222831;
+}
+
+canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0; 
+}
+
+h1, textarea{
+	font-size: 10em;
+	line-height: 1.5em;
+	color: #f4f5f9;
+	font-weight: bold;
+	width: 100%;
+}
+
+textarea{
+	background: none;
+	border: none;
+	font-family: 'Josefin Slab', serif !important;
+	&:focus{
+		outline: none !important;
+	}
+}
+
+.prediction{
+	margin: 100px 50px;
+}

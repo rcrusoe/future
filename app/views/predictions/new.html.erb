@@ -1,0 +1,13 @@
+<canvas class='connecting-dots'></canvas>
+
+<div class="prediction">
+  <%= form_for(@prediction) do |f| %>
+	  <div class="field">
+	    <%= f.text_area :description, autofocus: "true", rows: "3"%>
+	  </div>
+	<% end %>
+</div>
+
+<script>
+	$("textarea").focus().val("In the future, food will ");
+</script>
