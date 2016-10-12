@@ -10,6 +10,11 @@ html, body {
   background-color: #222831;
 }
 
+a{
+	color: #f4f5f9;
+	text-decoration: none;
+}
+
 canvas {
   position: absolute;
   width: 100%;
@@ -92,7 +97,20 @@ textarea{
 }
 
 .index{
+	.header{
+		@include span-columns(10);
+		@include shift(1);
+		font-family: 'Josefin Slab', serif;
+		font-size: 2em;
+		line-height: 1.5em;
+		position: fixed;
+  		top: 0;
+		.right{
+			float: right;
+		}
+	}
 	table{
+		margin-top: 100px;
 		@include span-columns(10);
 		@include shift(1);
 		tr{
@@ -113,7 +131,7 @@ textarea{
 			&:hover{
 				transition:all 0.3s ease;
 				border-bottom: 1px solid #f4f5f9;
-
+				cursor: pointer;
 			}
 			span{
 				font-size: 1.4em;

@@ -1,4 +1,10 @@
 <div class="index">
+	<div class="header">
+		<p class="right">
+			<%= link_to 'New', root_path %>
+		</p>
+		<p>Filter Topics</p>
+	</div>
 	<table>
 	  <tbody>
 	    <% @predictions.each do |prediction| %>
