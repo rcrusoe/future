@@ -29,7 +29,7 @@ class PredictionsController < ApplicationController
 
     respond_to do |format|
       if @prediction.save
-        format.html { redirect_to @prediction, notice: 'Prediction was successfully created.' }
+        format.html { redirect_to action: :index, notice: 'Prediction was successfully created.' }
         format.json { render :show, status: :created, location: @prediction }
       else
         format.html { render :new }

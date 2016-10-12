@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Future</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+
+	<!-- Basic Page Needs
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<title>Future</title>
+	<%= csrf_meta_tags %>
+
+	<!-- Style Sheets
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
+	<!-- Script
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+
+	<!-- Mobile Specific Metas
+  	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Fonts
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+	<script src="https://use.typekit.net/sir4bgl.js"></script>
+	<script>try{Typekit.load({ async: false });}catch(e){}</script>
 </head>
 <body>
 

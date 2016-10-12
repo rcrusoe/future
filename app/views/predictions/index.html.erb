@@ -1,2 +1,13 @@
-<canvas class='connecting-dots'></canvas>
-
+<div class="index">
+	<table>
+	  <tbody>
+	    <% @predictions.each do |prediction| %>
+	      <tr>
+	      	<td class="votes"><button>▲ &nbsp <span>5</span></button></td>
+	        <td class="topic"><%= prediction.topic %></td>
+	        <td class="description"><%= prediction.description %></td>
+	      </tr>
+	    <% end %>
+	  </tbody>
+	</table>
+</div>
