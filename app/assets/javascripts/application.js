@@ -15,6 +15,27 @@
 //= require turbolinks
 //= require_tree .
 
+function newTopic(topic){
+	$("#topic").val(topic);
+	$("#description").focus().val("In the future, " + topic + " will ");
+	var initial_length = $("#description").val().length;
+	$(document).on('keyup', '#description', function(){
+		var current_length = $("#description").val().length;
+		if (current_length < initial_length) {
+			$("#description").focus().val("In the future, " + topic + " will ");
+		}
+	})
+}
+
+function submit(){
+	$(document).on('keydown', '#description', function(e) {
+	  if(e.keyCode == 13 && (e.metaKey || e.ctrlKey)) {
+	    $(this).parents('form').submit()
+	  }
+	})
+}
+
+
 var canvasDots = function() {
     var canvas = document.querySelector('canvas'),
         ctx = canvas.getContext('2d'),

@@ -1,5 +1,6 @@
 <canvas class='connecting-dots'></canvas>
 
+
 <div class="prediction">
   <%= form_for(@prediction) do |f| %>
       <div class="field">
@@ -17,13 +18,8 @@
 	</p>
 </div>
 
+
 <script>
-	var topic = "<%= @topics.sample %>";
-	$("#topic").val(topic);
-	$("#description").focus().val("In the future, " + topic + " will ");
-	$(document).on('keydown', '#description', function(e) {
-	  if(e.keyCode == 13 && (e.metaKey || e.ctrlKey)) {
-	    $(this).parents('form').submit()
-	  }
-	})
+	newTopic("<%= @topics.sample %>");
+	submit();
 </script>
